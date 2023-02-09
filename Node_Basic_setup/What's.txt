@@ -1,0 +1,16 @@
+Basic Setup for Node * 
+
+Server > 
+    Node
+    Nodemon
+    Express for Creating App & APIs
+    DotEnv for the environment variables.    
+    different apis are there
+        /
+        /url
+        /maths
+        /primes
+
+
+Client > 
+    nothing here

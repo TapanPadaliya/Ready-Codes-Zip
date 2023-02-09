@@ -1,0 +1,37 @@
+//HTTP Server-----------------------------------------------------------------------------------------
+//http module to create server 
+var http = require("http");
+//Create Server
+http.Server(function (req, res) {
+    //http status 200 : ok
+    res.writeHead(200, { 'Content-Type': "text/plain" });
+    //res.end("Response Ends with Status code 200 <hr>"+express);
+}).listen(5001, () => console.log("🔰 Server Running at Port : 5001 | http://localhost:5001/ | http://127.0.0.1:5001/ "));
+
+
+//Express Server-----------------------------------------------------------------------------------------
+const express = require('express');
+const app = express();
+
+//Default App
+app.get('/',
+    function (req, res) {
+        res.send(mainmaths())
+    }
+).listen(5001, () => console.log("🔰 Server Running at Port : 5001 | http://localhost:5001/ | http://127.0.0.1:5001/ "));
+
+
+// Try Catch Finally for try on some errors
+    try{
+    var x = 2;
+    var y = 3;
+    var z = Number(true);
+    console.log(adder(x, Number("17"), z));
+    }catch(err){
+        console.log("🔴 Error Occurse ! ");
+        console.log("   Error Name is  : "+err.name);
+        console.log("   Error Message is  : "+err.message);
+    }
+    finally{
+        //Final Return Function.
+    }
